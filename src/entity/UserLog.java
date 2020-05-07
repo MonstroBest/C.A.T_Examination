@@ -1,28 +1,45 @@
 package entity;
-/**
- * 用户登录类
- * @author wj
- *
- */
+
 public class UserLog {
-	private String userid;//用户名
-	private String password;//密码
+	private String userName;
+	private String userPassword;
+	private int status;
 	
-	public String getUserid() {
-		return userid;
-	}
-	public void setUserid(String userid) {
-		this.userid = userid;
-	}
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	public UserLog(String userid, String password, double balance,int id) {
+	
+	
+	public UserLog(String userName, String userPassword, int status) {
 		super();
-		this.userid = userid;
-		this.password = password;
+		this.userName = userName;
+		this.userPassword = userPassword;
+		this.status = status;
 	}
+	public UserLog(int status) {
+		this.status = status;
+	}
+	public UserLog() {
+		
+	}
+	
+	
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public String getUserPassword() {
+		return userPassword;
+	}
+	public void setUserPassword(String userPassword) {
+		this.userPassword = userPassword;
+	}
+	public int getStatus() {
+		return status;
+	}
+	public void setStatus(int status) {
+		this.status = status;
+	}
+	
+	
+	
 }
